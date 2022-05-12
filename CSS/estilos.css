@@ -10,7 +10,12 @@
     }
     a {
         text-decoration: none;
+        text-decoration: underline solid transparent;
         color: #283D3B;
+        transition: text-decoration 500ms ease;
+    }
+    a:hover {
+        text-decoration: underline solid currentColor;
     }
     .fondo{
         background-color: #D7DFCE;
@@ -58,14 +63,16 @@
         width: 100%;
     }
     
-
     .trabajosRecientes {
         width:65%;
         height: 45%;
         border: solid 3px #502419;
         justify-content: center;
+        transition: transform .2s;
     }
-
+    .trabajosRecientes:hover{
+        transform: scale(1.2);
+    }
     .paginas {
         list-style: none;
         display: flex;
@@ -85,18 +92,15 @@
         justify-content: center;
         font-weight: 250;
     }
-
     .Titulo {
         display: flex;
         justify-content: center;
         padding: 0px;
         margin-top: 0px;
     }
-
     .logoHeader {
         display: none;
     }
-    
     body{
         height: max-content;
     }
@@ -146,33 +150,33 @@
     font-weight: 300;
     padding-left: 30px;
     text-decoration: underline;
-}
-.formulario {
+    }
+    .formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
 
-}
-.itemForm {
+    }
+    .itemForm {
     padding-top: 5px;
     padding-bottom: 5px;
     font-weight: 150;
-}
-.boton {
+    }
+    .boton {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 5px;
-}
-.botones {
+    }
+    .botones {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
     padding: 5px 0%;
-}
+    }
 
 }
 
