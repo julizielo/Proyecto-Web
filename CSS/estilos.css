@@ -1,0 +1,302 @@
+/* MEDIA QUERY */
+@media screen and (min-width: 0px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    .fRakkas {
+        font-family: "Rakkas";
+        color: #283D3B;
+    }
+    a {
+        text-decoration: none;
+        color: #283D3B;
+    }
+    .fondo{
+        background-color: #D7DFCE;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    h1 {
+        padding-top: 40px;
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    h2 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-weight: 250;
+    }
+    h3 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        font-weight: 200;
+    }
+    h4 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        font-weight: 150;
+        padding-right: 10px;
+    }
+    .imgTrabajos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+
+    .trabajosRecientes {
+        width:65%;
+        height: 45%;
+        border: solid 3px #502419;
+        justify-content: center;
+    }
+
+    .paginas {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 0px;
+        font-weight: 100;
+        font-size: smaller;
+        width: 100%;
+    }
+    h2 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-weight: 250;
+    }
+
+    .Titulo {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .logoHeader {
+        display: none;
+    }
+    
+    body{
+        height: max-content;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .sobreNosotros {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        font-weight: 100;
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+    .gridCarasso {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-rows: 1fr 5fr 1fr;
+    }
+    iframe {
+        height: 80%;
+        width: 90%;
+    }
+    .navega{
+        font-size: 0.9rem;
+    }
+    .pregFrec {
+    font-weight: 300;
+    padding-left: 30px;
+    text-decoration: underline;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+}
+.itemForm {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 150;
+}
+.boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 5px 0%;
+}
+
+}
+
+/*@media screen and (min-width: 728px) {}*/
+
+@media screen and (min-width: 1024px) {
+    .imgTrabajos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+        height: 50%;
+    }
+    .paginas {
+        padding-top: 50px;
+        font-size:medium;
+        width: 30%;
+    }
+    .trabajosRecientes {
+        width: 100%;
+        height: 70%;
+        border: solid 3px #502419;
+        justify-content: center;
+    }
+    .logoHeader{
+        display: block;
+        visibility: visible;
+        padding: 15px;
+        width: 150px;
+        height: 150px;
+    }
+    .Titulo {
+        display: flex;
+        justify-content: center;
+        padding-left: 250px;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 2rem;
+    }
+    h3 {
+        padding-left: 30px;
+    }
+    h4 {
+        padding-left: 30px;
+    }
+    .trabajosRecientes {
+        width:45%;
+        height: auto;
+        border: solid 3px #502419;
+        justify-content: center;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: flex-end;
+    }
+    .gridCarasso {
+        grid-template-rows: 1fr 3.5fr 1fr;
+    }
+    iframe {
+        height: 100%;
+        width: 50%;
+    }
+    .mapaInteractivo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navega{
+        font-size: 1rem;
+    }
+    .pregFrec {
+        font-weight: 300;
+        padding-left: 30px;
+        font-size: larger;
+    }
+    .sobreNosotros {
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-weight: 100;
+        text-align: start;
+        padding-right: 0px;
+    }
+    .formulario {
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px;
+        padding: 5px;
+    }
+    .sectionForm{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+.mainNosotros{
+    justify-content: center;
+    height: 70%;
+}
+.mainFAQ{
+    justify-content: center;
+    height: 60%;
+}
+}
