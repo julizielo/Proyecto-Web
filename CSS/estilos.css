@@ -26,6 +26,9 @@
         justify-content: center;
         width: 100%;
     }
+    .navbar{
+        justify-content: flex-end;
+    }
     h1 {
         padding-top: 40px;
         font-weight: 300;
@@ -77,8 +80,9 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
+        align-content: flex-end;
         padding-top: 0px;
         font-weight: 100;
         font-size: smaller;
@@ -135,9 +139,10 @@
         display: grid;
         grid-template-areas:
             "header"
+            "aside"
             "main"
             "footer";
-        grid-template-rows: 1fr 5fr 1fr;
+        grid-template-rows: 1fr 0.2fr 5fr 1fr;
     }
     iframe {
         height: 80%;
@@ -177,12 +182,19 @@
     width: 100%;
     padding: 5px 0%;
     }
-
+    .laurelGreen{
+        background-color: #C3CFB5;
+    }
 }
 
 /*@media screen and (min-width: 728px) {}*/
 
 @media screen and (min-width: 1024px) {
+    ul{
+        display: block;
+        visibility: visible;
+        height: 100%;
+    }
     .imgTrabajos {
         display: flex;
         flex-direction: row;
@@ -193,7 +205,7 @@
     .paginas {
         padding-top: 50px;
         font-size:medium;
-        width: 30%;
+        width: 100%;
     }
     .trabajosRecientes {
         width: 100%;
@@ -211,12 +223,11 @@
     .Titulo {
         display: flex;
         justify-content: center;
-        padding-left: 250px;
     }
     header {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
     }
     main {
@@ -254,7 +265,7 @@
         align-content: flex-end;
     }
     .gridCarasso {
-        grid-template-rows: 1fr 3.5fr 1fr;
+        grid-template-rows: 1fr 0.2fr 3.5fr 1fr;
     }
     iframe {
         height: 100%;
